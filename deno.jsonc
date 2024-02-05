@@ -1,4 +1,10 @@
 {
+  "name": "common-exceptions",
+  "description": "Commonly-used exceptions.",
+  "version": "0.0.1",
+  "author": "integereleven",
+  "license": "MIT",
+  "status": "unstable",
   "lint": {
     "rules": {
       "tags": [

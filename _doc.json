@@ -1,0 +1,5771 @@
+[
+  {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/version.ts",
+      "line": 11,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the intv8 common-exceptions package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.1",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.1"
+        }
+      },
+      "kind": "const"
+    }
+  },
+  {
+    "kind": "class",
+    "name": "DiskException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/disk_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation encounters disk issues."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link DiskException} exception with the provided message, optionally with additional {@link DiskExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/disk_exception.ts",
+            "line": 18,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link DiskException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/disk_exception.ts",
+            "line": 23,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "OSException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "DiskExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "DiskExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "DiskExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "DiskExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "DiskExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/disk_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link DiskException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "DecoratorException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+      "line": 44,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a decorator fails to apply."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link DecoratorException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+            "line": 48,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link DecoratorException} exception with a message created from the provided {@link DecoratorExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+            "line": 51,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link DecoratorException} exception with the provided message, optionally with additional {@link DecoratorExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+            "line": 54,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+            "line": 57,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link DecoratorException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+            "line": 70,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "ValueException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "DecoratorExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "DecoratorExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "DecoratorExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "DecoratorExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "DecoratorExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/decorator_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link DecoratorException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "decoratorType",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "DecoratorType",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "DecoratorType"
+                      }
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "decoratorName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "RangeException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+      "line": 76,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a number is outside the bounds of a specified range."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RangeException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+            "line": 79,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RangeException} exception with a message created from the provided {@link RangeExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+            "line": 82,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RangeException} exception with the provided message, optionally with additional {@link RangeExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+            "line": 85,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+            "line": 88,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link RangeException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+            "line": 103,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "ValueException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "RangeExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "RangeExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "RangeExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "RangeExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "RangeExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/range_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link RangeException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "value",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "valueName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "lowerBound",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "upperBound",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "IndexException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+      "line": 53,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an index is outside the bounds of an array."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IndexException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+            "line": 56,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IndexException} exception with a message created from the provided {@link IndexExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+            "line": 59,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IndexException} exception with the provided message, optionally with additional {@link IndexExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+            "line": 62,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+            "line": 65,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link IndexException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+            "line": 80,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "RangeException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "IndexExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IndexExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "IndexExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IndexExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "IndexExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/index_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link IndexException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "index",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "valueName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "upperBound",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "OSException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/os_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The base exception for OS related exceptions."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link OSException} exception with the provided message, optionally with additional {@link OSExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/os_exception.ts",
+            "line": 18,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link OSException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/os_exception.ts",
+            "line": 23,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "Exception",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "OSExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "OSExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "OSExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "OSExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "OSExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/os_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link OSException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "FormatException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/format_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a format is invalid."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link FormatException} exception with the provided message, optionally with additional {@link FormatExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/format_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link FormatException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/format_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "InvalidException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "FormatExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "FormatExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "FormatExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "FormatExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "FormatExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/format_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link FormatException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "KeyException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+      "line": 54,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a dynamically accessed property key does not exist on an object or record."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link KeyException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+            "line": 57,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link KeyException} exception with a message created from the provided {@link KeyExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+            "line": 60,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link KeyException} exception with the provided message, optionally with additional {@link KeyExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+            "line": 63,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+            "line": 66,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link KeyException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+            "line": 79,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "NotFoundException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "KeyExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "KeyExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "KeyExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "KeyExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "KeyExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/key_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link KeyException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "key",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "valueName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "validKeys",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "",
+                      "kind": "array",
+                      "array": {
+                        "repr": "string",
+                        "kind": "keyword",
+                        "keyword": "string"
+                      }
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "AbortedException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/aborted_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation is aborted."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link AbortedException} exception with the provided message, optionally with additional {@link AbortedExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/aborted_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link AbortedException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/aborted_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "InterruptException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "AbortedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AbortedExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "AbortedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AbortedExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "AbortedExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/aborted_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link AbortedException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "IterationException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+      "line": 77,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation has exceeded a maximum iteration threshold."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IterationException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+            "line": 81,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IterationException} exception with a message created from the provided {@link IterationExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+            "line": 84,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link IterationException} exception with the provided message, optionally with additional {@link IterationExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+            "line": 87,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+            "line": 90,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link IterationException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+            "line": 103,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "AbortedException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "IterationExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IterationExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "IterationExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "IterationExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "IterationExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/iteration_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link IterationException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "operationType",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "SoftwareOperation",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "SoftwareOperation"
+                      }
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "operationName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "iterationCount",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "repeatingValue",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "boolean",
+                      "kind": "keyword",
+                      "keyword": "boolean"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "MemoryException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/memory_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation encounters memory issues, but may be recoverable."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link MemoryException} exception with the provided message, optionally with additional {@link MemoryExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/memory_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link MemoryException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/memory_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "OSException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "MemoryExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "MemoryExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "MemoryExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "MemoryExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "MemoryExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/memory_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link MemoryException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "TimeoutException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+      "line": 57,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation exceeds a timeout threshold."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link TimeoutException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+            "line": 61,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link TimeoutException} exception with a message created from the provided {@link TimeoutExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+            "line": 64,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link TimeoutException} exception with the provided message, optionally with additional {@link TimeoutExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+            "line": 67,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+            "line": 70,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the TimeoutException exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+            "line": 83,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "AbortedException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "TimeoutExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "TimeoutExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "TimeoutExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "TimeoutExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "TimeoutExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/timeout_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link TimeoutException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "operationType",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "SoftwareOperation",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "SoftwareOperation"
+                      }
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "operationName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "operationTimeout",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "NotFoundException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_found_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an requested item is not found."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link NotFoundException} exception with the provided message, optionally with additional {@link NotFoundExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_found_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link NotFoundException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_found_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "ValueException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "NotFoundExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotFoundExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "NotFoundExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotFoundExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "NotFoundExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_found_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link NotFoundException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ProcessException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/process_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a process is in an unexpected state."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ProcessException} exception with the provided message, optionally with additional {@link ProcessExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/process_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ProcessException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/process_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "OSException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ProcessExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ProcessExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ProcessExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ProcessExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ProcessExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/process_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ProcessException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "MethodException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+      "line": 57,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a dynamically called method is not found on an object."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link MethodException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+            "line": 61,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link MethodException} exception with a message created from the provided {@link MethodExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+            "line": 64,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link MethodException} exception with the provided message, optionally with additional {@link MethodExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+            "line": 67,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+            "line": 70,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link MethodException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+            "line": 83,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "NotFoundException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "MethodExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "MethodExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "MethodExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "MethodExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "MethodExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/method_exception.ts",
+      "line": 19,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link MethodException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "methodName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "valueName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "validMethods",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "",
+                      "kind": "array",
+                      "array": {
+                        "repr": "string",
+                        "kind": "keyword",
+                        "keyword": "string"
+                      }
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ArgumentException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+      "line": 43,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an argument has the correct type and is invalid."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+            "line": 47,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentException} exception with a message created from the provided {@link ArgumentExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+            "line": 50,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentException} exception with the provided message, optionally with additional {@link ArgumentExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+            "line": 53,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+            "line": 56,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ArgumentException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+            "line": 69,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "ValueException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ArgumentExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ArgumentExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ArgumentExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ArgumentExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ArgumentExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ArgumentException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "argumentName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "argumentConstraints",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "",
+                      "kind": "array",
+                      "array": {
+                        "repr": "string",
+                        "kind": "keyword",
+                        "keyword": "string"
+                      }
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "NotImplementedException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+      "line": 33,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a method has not been implemented."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link NotImplementedException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+            "line": 37,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link NotImplementedException} exception with a message created from the provided {@link NotImplementedExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+            "line": 40,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link NotImplementedException} exception with the provided message, optionally with additional {@link NotImplementedExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+            "line": 43,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+            "line": 46,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link NotImplementedException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+            "line": 59,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "InvalidException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "NotImplementedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotImplementedExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "NotImplementedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotImplementedExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "NotImplementedExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_implemented_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link NotImplementedException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "methodName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ConnectionException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/connection_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a connection is in an unexpected state."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ConnectionException} exception with the provided message, optionally with additional {@link ConnectionExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/connection_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ConnectionException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/connection_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "OSException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ConnectionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ConnectionExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ConnectionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ConnectionExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ConnectionExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/connection_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ConnectionException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "InvalidException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/invalid_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised during invalid operations."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link InvalidException} exception with the provided message, optionally with additional {@link InvalidExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/invalid_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link InvalidException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/invalid_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "Exception",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "InvalidExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "InvalidExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "InvalidExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "InvalidExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "InvalidExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/invalid_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link InvalidException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "Exception",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+      "line": 17,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The base exception for all exceptions."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link Exception} with the provided `message` and exception `init` properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": true,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "accessibility": "protected",
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 20,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link Exception} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 25,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "The exception name for the {@link Exception} exception."
+          },
+          "tsType": null,
+          "readonly": true,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "name",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 28,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "jsDoc": {
+            "doc": "The inner cause of the {@link Exception}."
+          },
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "cause",
+          "kind": "getter",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "",
+              "kind": "union",
+              "union": [
+                {
+                  "repr": "Error",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "Error"
+                  }
+                },
+                {
+                  "repr": "Exception",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "Exception"
+                  }
+                },
+                {
+                  "repr": "undefined",
+                  "kind": "keyword",
+                  "keyword": "undefined"
+                }
+              ]
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 31,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "The exception init data for the {@link Exception}."
+          },
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "data",
+          "kind": "getter",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "",
+              "kind": "union",
+              "union": [
+                {
+                  "repr": "Omit",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": [
+                      {
+                        "repr": "T",
+                        "kind": "typeRef",
+                        "typeRef": {
+                          "typeParams": null,
+                          "typeName": "T"
+                        }
+                      },
+                      {
+                        "repr": "cause",
+                        "kind": "literal",
+                        "literal": {
+                          "kind": "string",
+                          "string": "cause"
+                        }
+                      }
+                    ],
+                    "typeName": "Omit"
+                  }
+                },
+                {
+                  "repr": "undefined",
+                  "kind": "keyword",
+                  "keyword": "undefined"
+                }
+              ]
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 38,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns the exception help url for the {@link Exception}."
+          },
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "helpUrl",
+          "kind": "getter",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 50,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns the string representation of the {@link Exception}."
+          },
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "isOverride": true,
+          "name": "toString",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 64,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns the numeric representation of the {@link Exception}."
+          },
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "isOverride": true,
+          "name": "valueOf",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "number",
+              "kind": "keyword",
+              "keyword": "number"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 71,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns the host for the exception explainer tool."
+          },
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getHelpUrlHost",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 76,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns the path for the exception explainer tool."
+          },
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getHelpUrlPath",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 81,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns URL encoded JSON-stringified data."
+          },
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getUrlEncodedData",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 89,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Returns URL encoded JSON-stringified cause."
+          },
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getUrlEncodedCause",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+            "line": 106,
+            "col": 2
+          }
+        }
+      ],
+      "extends": "Error",
+      "implements": [
+        {
+          "repr": "IHelpful",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "IHelpful"
+          }
+        }
+      ],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/exception.ts",
+      "line": 14,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the exception initialization properties for an {@link Exception}."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [],
+                "callSignatures": [],
+                "indexSignatures": [
+                  {
+                    "readonly": false,
+                    "params": [
+                      {
+                        "kind": "identifier",
+                        "name": "key",
+                        "optional": false,
+                        "tsType": {
+                          "repr": "string",
+                          "kind": "keyword",
+                          "keyword": "string"
+                        }
+                      }
+                    ],
+                    "tsType": {
+                      "repr": "any",
+                      "kind": "keyword",
+                      "keyword": "any"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "AssertionException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/assertion_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an assertion is incorrect."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link AssertionException} exception with the provided message, optionally with additional {@link AssertionExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/assertion_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link AssertionException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/assertion_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "Exception",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "AssertionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AssertionExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "AssertionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AssertionExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "AssertionExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/assertion_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link AssertionException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ValueException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/value_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when a value has the correct type and is invalid, or other applications of invalid value."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ValueException} exception with the provided message, optionally with additional {@link ValueExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/value_exception.ts",
+            "line": 18,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ValueException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/value_exception.ts",
+            "line": 23,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "InvalidException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ValueExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ValueExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ValueExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ValueExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ValueExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/value_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ValueException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "InterruptException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/interrupt_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation is interrupted."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link InterruptException} exception with the provided message, optionally with additional {@link InterruptExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/interrupt_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link InterruptException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/interrupt_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "OSException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "InterruptExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "InterruptExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "InterruptExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "InterruptExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "InterruptExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/interrupt_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link InterruptException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ExternalException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+      "line": 41,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when external (3rd party) code raised an error."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ExternalException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+            "line": 45,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ExternalException} exception with a message created from the provided {@link ExternalExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+            "line": 48,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ExternalException} exception with the provided message, optionally with additional {@link ExternalExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+            "line": 51,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+            "line": 54,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ExternalException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+            "line": 67,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "Exception",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ExternalExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ExternalExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ExternalExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ExternalExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ExternalExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/external_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ExternalException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "externalType",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "Codebase",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "Codebase"
+                      }
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "externalName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "RecursionException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+      "line": 56,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation exceeds a recursion depth."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RecursionException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+            "line": 60,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RecursionException} exception with a message created from the provided {@link RecursionExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+            "line": 63,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link RecursionException} exception with the provided message, optionally with additional {@link RecursionExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+            "line": 66,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+            "line": 69,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link RecursionException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+            "line": 82,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "AbortedException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "RecursionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "RecursionExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "RecursionExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "RecursionExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "RecursionExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/recursion_exception.ts",
+      "line": 16,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link RecursionException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "operationType",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "SoftwareOperation",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "SoftwareOperation"
+                      }
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "operationName",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "recursionDepth",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "NotSupportedException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_supported_exception.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an operation is not supported."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link NotSupportedException} exception with the provided message, optionally with additional {@link NotSupportedExceptionInit} properties."
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_supported_exception.ts",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link NotSupportedException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_supported_exception.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "InvalidException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "NotSupportedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotSupportedExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "NotSupportedExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "NotSupportedExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "NotSupportedExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/not_supported_exception.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link NotSupportedException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": null,
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "ArgumentIndexException",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+      "line": 42,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "An exception raised when an index is outside the bounds of an arguments array."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentIndexException} exception with the default message and no exception init properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+            "line": 46,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentIndexException} exception with a message created from the provided {@link ArgumentIndexExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+            "line": 49,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "doc": "Creates a new {@link ArgumentIndexException} exception with the provided message, optionally with additional {@link ArgumentIndexExceptionInit} properties."
+          },
+          "accessibility": null,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "message",
+              "optional": false,
+              "tsType": {
+                "repr": "string",
+                "kind": "keyword",
+                "keyword": "string"
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "init",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+            "line": 52,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "msgOrInit",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "union",
+                  "union": [
+                    {
+                      "repr": "string",
+                      "kind": "keyword",
+                      "keyword": "string"
+                    },
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ]
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "maybeInit",
+              "optional": true,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+            "line": 55,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "doc": "The exception code for the {@link ArgumentIndexException} exception."
+          },
+          "tsType": {
+            "repr": "number",
+            "kind": "keyword",
+            "keyword": "number"
+          },
+          "readonly": false,
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "code",
+          "location": {
+            "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+            "line": 70,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "ArgumentException",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "ArgumentIndexExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ArgumentIndexExceptionInit"
+            }
+          },
+          "default": {
+            "repr": "ArgumentIndexExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ArgumentIndexExceptionInit"
+            }
+          }
+        }
+      ],
+      "superTypeParams": [
+        {
+          "repr": "T",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "T"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ArgumentIndexExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/exceptions/argument_index_exception.ts",
+      "line": 17,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The exception init properties for the {@link ArgumentIndexException} exception."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "BaseExceptionInit",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeLiteral",
+              "typeLiteral": {
+                "methods": [],
+                "properties": [
+                  {
+                    "name": "index",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  },
+                  {
+                    "name": "upperBound",
+                    "params": [],
+                    "computed": false,
+                    "optional": true,
+                    "tsType": {
+                      "repr": "number",
+                      "kind": "keyword",
+                      "keyword": "number"
+                    },
+                    "typeParams": []
+                  }
+                ],
+                "callSignatures": [],
+                "indexSignatures": []
+              }
+            }
+          ],
+          "typeName": "BaseExceptionInit"
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "BaseExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/types/types.ts",
+      "line": 20,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Utility type to create an `ExceptionInit` for an exception, optionally merged with properties from `T`."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "intersection",
+        "intersection": [
+          {
+            "repr": "CommonExceptionInit",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "CommonExceptionInit"
+            }
+          },
+          {
+            "repr": "T",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "T"
+            }
+          }
+        ]
+      },
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "AnonymousObject",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AnonymousObject"
+            }
+          },
+          "default": {
+            "repr": "AnonymousObject",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AnonymousObject"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "CommonExceptionInit",
+    "location": {
+      "filename": "file:///C:/repos/intv8/common-exceptions/src/types/types.ts",
+      "line": 14,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The common initilization options for all exceptions."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "intersection",
+        "intersection": [
+          {
+            "repr": "AnonymousObject",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "AnonymousObject"
+            }
+          },
+          {
+            "repr": "",
+            "kind": "typeLiteral",
+            "typeLiteral": {
+              "methods": [],
+              "properties": [
+                {
+                  "name": "cause",
+                  "params": [],
+                  "computed": false,
+                  "optional": true,
+                  "tsType": {
+                    "repr": "",
+                    "kind": "union",
+                    "union": [
+                      {
+                        "repr": "Error",
+                        "kind": "typeRef",
+                        "typeRef": {
+                          "typeParams": null,
+                          "typeName": "Error"
+                        }
+                      },
+                      {
+                        "repr": "Exception",
+                        "kind": "typeRef",
+                        "typeRef": {
+                          "typeParams": null,
+                          "typeName": "Exception"
+                        }
+                      }
+                    ]
+                  },
+                  "typeParams": []
+                }
+              ],
+              "callSignatures": [],
+              "indexSignatures": []
+            }
+          }
+        ]
+      },
+      "typeParams": []
+    }
+  }
+]
